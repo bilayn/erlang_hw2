@@ -1,0 +1,9 @@
+%%% P14 (*) Написать дубликатор всех элементов входящего списка
+
+-module(p14).
+-export([duplicate/1]).
+
+duplicate([]) -> 
+    [];
+duplicate([H | T]) -> 
+    [H,H | duplicate(T)].
